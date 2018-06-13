@@ -1,0 +1,65 @@
+[debug] [2018-06-13T03:17:11.290Z] ----------------------------------------------------------------------
+[debug] [2018-06-13T03:17:11.300Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Nehal\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-06-13T03:17:11.300Z] CLI Version:   3.18.6
+[debug] [2018-06-13T03:17:11.300Z] Platform:      win32
+[debug] [2018-06-13T03:17:11.300Z] Node Version:  v8.9.4
+[debug] [2018-06-13T03:17:11.308Z] Time:          Wed Jun 13 2018 08:17:11 GMT+0500 (Pakistan Standard Time)
+[debug] [2018-06-13T03:17:11.310Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-06-13T03:17:11.351Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-06-13T03:17:11.351Z] > authorizing via signed-in user
+[debug] [2018-06-13T03:17:11.361Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-06-13T03:17:11.361Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/TrqFwFSzPcKDqiVkJ65dQNKGYzsIqiEyNT9HY8O081c4emHaz2aFGVVcYw_h-07b',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Wed Jun 13 2018 08:17:11 GMT+0500 (Pakistan Standard Time)
+[debug] [2018-06-13T03:17:11.960Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-13T03:17:12.038Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/manal-liaquat  
+  
+ Wed Jun 13 2018 08:17:12 GMT+0500 (Pakistan Standard Time)
+[debug] [2018-06-13T03:17:13.381Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-13T03:17:13.381Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/manal-liaquat/tokens  
+  
+ Wed Jun 13 2018 08:17:13 GMT+0500 (Pakistan Standard Time)
+[debug] [2018-06-13T03:17:14.188Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'manal-liaquat'...
+[info] 
+[info] i  deploying database, hosting
+[info] i  database: checking rules syntax...
+[debug] [2018-06-13T03:17:15.576Z] >>> HTTP REQUEST PUT https://manal-liaquat.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  "rules": {
+    ".read": "auth != true",
+    ".write": "auth != true"
+  }
+}
+ 
+ Wed Jun 13 2018 08:17:15 GMT+0500 (Pakistan Standard Time)
+[debug] [2018-06-13T03:17:16.774Z] <<< HTTP RESPONSE 200
+[info] +  database: rules syntax for database manal-liaquat is valid
+[info] i  hosting: preparing public directory for upload...
+[debug] [2018-06-13T03:17:27.318Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/manal-liaquat/uploads/-LEr8Q1MmzIGci4oQSCq?fileCount=1508&message=  
+  
+ Wed Jun 13 2018 08:17:27 GMT+0500 (Pakistan Standard Time)
+[debug] [2018-06-13T03:25:46.494Z] ----------------------------------------------------------------------
+[debug] [2018-06-13T03:25:46.494Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Nehal\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy --only storage
+[debug] [2018-06-13T03:25:46.494Z] CLI Version:   3.18.6
+[debug] [2018-06-13T03:25:46.494Z] Platform:      win32
+[debug] [2018-06-13T03:25:46.494Z] Node Version:  v8.9.4
+[debug] [2018-06-13T03:25:46.494Z] Time:          Wed Jun 13 2018 08:25:46 GMT+0500 (Pakistan Standard Time)
+[debug] [2018-06-13T03:25:46.494Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-06-13T03:25:46.541Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-06-13T03:25:46.541Z] > authorizing via signed-in user
+[debug] [2018-06-13T03:25:46.557Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/manal-liaquat  
+  
+ Wed Jun 13 2018 08:25:46 GMT+0500 (Pakistan Standard Time)
+[debug] [2018-06-13T03:25:48.065Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-13T03:25:48.065Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/manal-liaquat/tokens  
+  
+ Wed Jun 13 2018 08:25:48 GMT+0500 (Pakistan Standard Time)
+[debug] [2018-06-13T03:25:48.933Z] <<< HTTP RESPONSE 200
